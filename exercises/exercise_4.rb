@@ -11,6 +11,11 @@ surrey_store = Store.create(name: 'Surrey', annual_revenue: 224000, mens_apparel
 whistler_store = Store.create(name: 'Whistler', annual_revenue: 1900000, mens_apparel: 1, womens_apparel: 0)
 yaletown_store = Store.create(name: 'Yaletown', annual_revenue: 430000, mens_apparel: 1, womens_apparel: 1)
 
+@store4 = Store.find_by(id: 4)
+@store5 = Store.find_by(id: 5)
+@store6 = Store.find_by(id: 6)
+
+
 @mens_stores = Store.where(mens_apparel: 1)
 
 @mens_stores.each do |mens_store|
